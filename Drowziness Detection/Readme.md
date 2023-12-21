@@ -4,7 +4,7 @@
 This project utilizes Long Short Term Memory(LSTM) techniques and a Convolutional Neural Network (CNN) model to detect drowsiness in a person's eyes through a webcam feed. It aims to enhance safety by alerting individuals who may be feeling drowsy while operating machinery, driving, or performing tasks that demand attention.
 
 The main components of this project include:
-- **lstm** Used to model temporal dependencies in eye state sequences, improving the prediction of drowsiness patterns
+- **Lstm:** Used to model temporal dependencies in eye state sequences, improving the prediction of drowsiness patterns
 - **OpenCV:** Used for capturing and processing video frames from the webcam.
 - **Haar Cascades:** Employed for detecting faces and eyes within the video frames.
 - **Keras with CNN:** Utilized for eye state prediction, determining whether eyes are open, closed, or slightly drowsy.
@@ -45,7 +45,7 @@ Press 'q' to exit the program.
 
 ## Credits
 - **Team Members:** 
-  - [Yash Anand]([link-to-profile](https://www.linkedin.com/in/yash-anand-349a69227/))
+  - [Yash Anand]([(https://www.linkedin.com/in/yash-anand-349a69227/)])
   - [Siddhant Mohanta]
   - [Sidhharth Shivam]
 - **Haar Cascades:** [OpenCV Documentation](link-to-opencv)
