@@ -1,41 +1,62 @@
-# Drowsiness Detection using Computer Vision and CNN
+<body style="background-color:white; color:black;">
 
-## Code Overview
-This code utilizes computer vision techniques along with a Convolutional Neural Network (CNN) model to detect drowsiness in a person's eyes via a webcam feed. Here's a breakdown of its functionalities:
+<h1 align="center" style="color:blue;">Drowsiness Detection using Computer Vision and CNN</h1>
+
+<p align="center">
+  <strong style="color:blue;">Code Overview</strong>
+</p>
+
+<p align="center">
+  This code employs computer vision techniques and a Convolutional Neural Network (CNN) model to detect drowsiness in a person's eyes through a webcam feed. Let's break it down step by step:
+</p>
 
 ### Imports and Setup
-- `cv2`: OpenCV library for computer vision tasks.
-- `os`: Operating system module for handling file paths.
-- `keras`: Deep learning library for creating and using neural networks.
-- `numpy`: Library for numerical computations.
-- `pygame.mixer`: Used for playing an alarm sound.
-- Initialization of sound and loading of pre-trained models and cascades (XML files used for object detection).
+
+- <span style="color:blue;">`cv2`</span>: OpenCV library for computer vision tasks.
+- <span style="color:blue;">`os`</span>: Operating system module for handling file paths.
+- <span style="color:blue;">`keras`</span>: Deep learning library for creating and using neural networks.
+- <span style="color:blue;">`numpy`</span>: Library for numerical computations.
+- <span style="color:blue;">`pygame.mixer`</span>: For playing an alarm sound.
+
+<em>Initialization of sound and loading of pre-trained models and cascades (XML files used for object detection).</em>
 
 ### Initialization
+
 - Loading Haar cascades for face, left eye, and right eye detection.
-- Loading a pre-trained CNN model (`cnncat2.h5`) to predict eye states.
+- Loading a pre-trained CNN model (<span style="color:blue;">`cnncat2.h5`</span>) to predict eye states.
 
 ### Video Capture and Processing Loop
+
 - Starts an infinite loop to capture video frames from the webcam.
-- Converts captured frames to grayscale for easier processing.
+- Converts the captured frame to grayscale for easier processing.
 - Detects faces and eyes in the frame using the loaded Haar cascades.
 
 ### Eye State Prediction
-- Iterates through detected eyes, processes them, and feeds them into the CNN model to predict open or closed states.
-- The model predicts each eye's state separately, providing a probability score.
+
+- Iterates through the detected eyes, processes them, and feeds them into the CNN model to predict whether the eyes are open or closed.
+- The model predicts the state of each eye separately and provides a probability score.
 
 ### Scoring System
-- Maintains a score based on eye state predictions, reflecting the person's alertness level.
-- Increments or decrements the score based on eye state predictions.
+
+- Based on the predictions, the code maintains a score for the person's alertness level.
+- The score is incremented or decremented based on the eye state predictions.
 
 ### Alerting Mechanism
-- Triggers an alarm sound and draws a red bounding box around the frame if the cumulative score surpasses a threshold (15) indicating potential drowsiness.
+
+- If the cumulative score surpasses a threshold (15 in this case), indicating drowsiness, an alarm sound is triggered.
+- Additionally, a red bounding box is drawn around the frame to visually alert the user.
 
 ### Display and Exit
-- Real-time display of video frames annotated with eye states and score.
-- Pressing 'q' terminates the loop, releasing the video capture and closing windows.
 
-## Explanation
-- The code continuously analyzes webcam frames, detecting faces and eyes.
-- It employs a CNN model to predict eye states, determining a drowsiness score.
-- If the score exceeds a threshold, an alarm triggers to alert potential drowsiness.
+- Displays the video frame with annotations (eye states, score) in real-time.
+- Pressing 'q' terminates the loop, releasing the video capture and closing the windows.
+
+<p align="center">
+  <strong style="color:blue;">Explanation</strong>
+</p>
+
+<p align="center">
+  The code continuously captures frames from the webcam, detecting faces and eyes within these frames. It uses a pre-trained CNN model to predict whether each eye is open or closed, assigning a score based on the prediction. The score determines the level of drowsiness, and if it exceeds a threshold, an alarm is triggered to alert potential drowsiness.
+</p>
+
+</body>
