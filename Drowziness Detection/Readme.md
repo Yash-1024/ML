@@ -45,7 +45,7 @@ Press 'q' to exit the program.
 
 ## Credits
 - **Team Members:** 
-  - [Yash Anand]([(https://www.linkedin.com/in/yash-anand-349a69227/)])
+  - [Yash Anand]((https://www.linkedin.com/in/yash-anand-349a69227/))
   - [Siddhant Mohanta]
   - [Sidhharth Shivam]
 - **Haar Cascades:** [OpenCV Documentation](link-to-opencv)
