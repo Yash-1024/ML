@@ -1,4 +1,26 @@
-# Drowsiness Detection using Computer Vision and CNN
+# USE CASE 1: Drowsiness detection using LSTM
+
+Network Architecture reference: 
+CNN + LSTM 
+https://arxiv.org/pdf/1411.4389.pdf * Data Labelling/annotation files
+https://journals.ekb.eg/article_257197_afc57de559f2a5a28ba7c6000e27c0c6.pdf
+Output Labels: 
+Based on Karolinska Sleepiness Scale (KSS), scale is calculated ranging from 
+1(Alert) ,2, 3 and 4(Sleepy)
+Other inputs: Students are free to choose transfer learning/fresh training from 
+article_257197_afc57de559f2a5a28ba7c6000e27c0c6.pdf (ekb.eg)
+Reference: Human Activity Recognition using TensorFlow (CNN + LSTM) | 2 Methods 
+ YouTube
+
+Expected Outputs:
+* Dataset used for training & testing
+* Model training code
+* Trained model output
+* Model architecture and code
+* Evaluation parameters such as: 
+Confusion matrix, Accuracy. Precision, 
+Recall, Specificity, F1 score etc as 
+applicable
 
 ## Project Description
 This project utilizes Long Short Term Memory(LSTM) techniques and a Convolutional Neural Network (CNN) model to detect drowsiness in a person's eyes through a webcam feed. It aims to enhance safety by alerting individuals who may be feeling drowsy while operating machinery, driving, or performing tasks that demand attention.
